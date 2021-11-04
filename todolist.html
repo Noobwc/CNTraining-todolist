@@ -4,12 +4,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./src/todolist.css">
+    <script type="text/javascript" src="./src/todolist.js"></script>
+    <title>TodoList</title>
 </head>
 <body>
-  <div>
-<!--      todolist-->
-  </div>
+<div class="overall">
+    <header>todos</header>
+    <ul class="cover_list">
+        <li class="input_item">
+            <div class="open"><span onclick="toggleTodos(this)">收起</span></div>
+            <div class="input"><input type="text" name="" placeholder="What needs to be done?"
+                                      onkeypress="addNewTodo(this)"></div>
+        </li>
+        <li>
+            <ul id="todo_list" class="todo_list">
+
+            </ul>
+        </li>
+        <li class="last_line">
+            <div id="left_item" class="inline">3 item left</div>
+            <div id="all" class="inline" onclick="showAll()">All</div>
+            <div id="active" class="inline" onclick="showActive()">Active</div>
+            <div id="completed" class="inline" onclick="showCompleted()">Completed</div>
+            <div id="clear_completed" class="inline" onclick="clearCompleted()">Clear Completed</div>
+        </li>
+    </ul>
+</div>
 
 </body>
 </html>

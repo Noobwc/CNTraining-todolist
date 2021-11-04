@@ -1,0 +1,111 @@
+body{
+    text-align: center;
+}
+
+span, .inline{
+    cursor:default;
+}
+
+.overall{
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 8vh;
+}
+
+header{
+    font-size: 100px;
+    color:rgba(220,38,38,0.2);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cover_list{
+    border: 1px solid #bebaba;
+}
+
+.input_item{
+    border-bottom: 1px solid #bebaba;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: left;
+}
+
+.open{
+    width: 60px;
+    margin-left: 10px;
+    display: inline;
+}
+
+.input{
+    height: 50px;
+    display: inline;
+}
+
+input{
+    width: 400px;
+    outline: none;
+    font-size: 30px;
+    height: 42px;
+    border-style:none;
+    padding: 0;
+}
+input::placeholder {
+    font-style: italic;
+}
+
+.items{
+    border-bottom: 1px solid #bebaba;
+    height: 50px;
+    text-align: left;
+}
+
+.complete{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    display:inline-block;
+    vertical-align: middle;
+    border:1px solid #bebaba;
+    border-radius: 50%;
+    background-size:cover;
+}
+
+.todo{
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.delete{
+    width: 40px;
+    height: 40px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.delete:hover{
+    background: url("../picture/X.png");
+    background-size:cover;
+}
+
+.inline{
+    display: inline;
+    margin: 0 1%;
+}
+.last_line{
+    text-align: left;
+}
+
+#left_item{
+    margin-right: 10%;
+}
+#clear_completed{
+    margin-left: 10%;
+}
